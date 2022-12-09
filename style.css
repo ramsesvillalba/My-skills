@@ -36,11 +36,13 @@
 
 @media (max-width:746px){
     .section-title h1{
+        font-weight:lighter;
         font-size: 100px;
     }
     .section-title h1:active{
         filter: contrast(250%);
         color: red;
+        font-weight:lighter;
     }
     
 }
