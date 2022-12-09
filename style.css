@@ -1,0 +1,52 @@
+.body{
+    margin: 0;
+    padding:0px ;
+    background-color: rgb(195, 255, 127);
+}
+.section-title{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 800px;
+    background: radial-gradient(rgb(40, 14, 10) , black);
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.section-title h1{
+    font-size: 160px;
+    font-weight:lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(117, 0, 0);
+    cursor:pointer;
+    transition: all 0.3s ;
+}
+
+.section-title h1::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.section-title h1:hover{
+    filter: contrast(250%);
+    color: red;
+}
+
+@media (max-width:746px){
+    .section-title h1{
+        font-size: 100px;
+    }
+    .section-title h1:active{
+        filter: contrast(250%);
+        color: red;
+    }
+    
+}
+@media (max-width:478px){
+    .section-title h1{
+        font-size: 60px;
+    }
+}
+
