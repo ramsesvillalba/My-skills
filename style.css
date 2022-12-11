@@ -66,15 +66,16 @@
 .section-title h1::before{
     content: var(--l);
     position: absolute;
-    transform: scale(1.1);
-    filter: blur(15px);
+    
 }
 
 .section-title h1:hover{
     filter: contrast(250%);
     color: red;
 }
-
+.section-title h1:hover::before{
+    filter: blur(15px);
+}
 
 /* Section flex  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
 
