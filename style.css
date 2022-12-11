@@ -1,23 +1,64 @@
+/* General MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
+
 .body{
     margin: 0;
-    padding:0px ;
+    padding:5px ;
     background-color: rgb(195, 255, 127);
 }
+@media (max-width:748px){
+    .section-title .div-title h1{
+        font-size: 100px;
+    }
+    
+    .section-title h1:active{
+        filter: contrast(250%);
+        color: red;
+    }
+    
+}
+@media (max-width:478px){
+    .section-title .div-title h1{
+        font-size: 60px;
+    }
+    .section-title h1:active{
+        filter: contrast(250%);
+        color: red;
+    }
+    
+}
+
+
+
+
+
+/* Section title MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 .section-title{
+    width: 100%;
     display: flex;
     justify-content: center;
-    place-items: center;
+    align-items: center;
     height: 800px;
     background: radial-gradient(rgb(40, 14, 10) , black);
     border-radius: 8px;
     gap: 5px;
 }
 
+.div-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: transparent;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+
 .section-title h1{
     font-size: 160px;
     font-weight:lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(117, 0, 0);
+    color: rgb(69, 0, 0);
     cursor:pointer;
     transition: all 0.3s ;
 }
@@ -34,21 +75,13 @@
     color: red;
 }
 
-@media (max-width:746px){
-    .section-title h1{
-        font-weight:lighter;
-        font-size: 100px;
-    }
-    .section-title h1:active{
-        filter: contrast(250%);
-        color: red;
-        font-weight:lighter;
-    }
-    
-}
-@media (max-width:478px){
-    .section-title h1{
-        font-size: 60px;
-    }
-}
 
+/* Section flex  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
+
+.section-flex{
+    display: flex;
+    width: 100%;
+    height: 720px;
+    background: fixed;
+    background-color: aqua;
+}
